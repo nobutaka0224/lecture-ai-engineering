@@ -35,22 +35,22 @@ st.subheader("テキスト入力")
 name = st.text_input("あなたの名前", "ゲスト")
 st.write(f"こんにちは、{name}さん！")
 
- ボタン
+# ボタン
  st.subheader("ボタン")
  if st.button("クリックしてください"):
      st.success("ボタンがクリックされました！")
 
- チェックボックス
+#チェックボックス
  st.subheader("チェックボックス")
  if st.checkbox("チェックを入れると追加コンテンツが表示されます"):
      st.info("これは隠れたコンテンツです！")
 
- スライダー
+#スライダー
  st.subheader("スライダー")
  age = st.slider("年齢", 0, 100, 25)
  st.write(f"あなたの年齢: {age}")
 
- セレクトボックス
+#セレクトボックス
  st.subheader("セレクトボックス")
  option = st.selectbox(
      "好きなプログラミング言語は?",
